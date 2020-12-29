@@ -1,0 +1,70 @@
+
+            <div class="headCont">    
+                      <header class="top">Todo El Mundo Esta Bienvenido</header><br><br>
+            </div>
+
+<div class="navContainer" >
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item " routerLinkActive="active"  >
+          <a class="nav-link" routerLink="/crear-vinos"  href="#">Publica Tu Vino</a>
+        </li>
+        <li class="nav-active"routerLinkActive="active"  >
+          <a class="nav-link" routerLink="/login"  href="#">Login</a>
+        </li>
+        <li>
+        <a href="https://api.whatsapp.com/send?phone=34642980302" class="links" target="_blank">
+        <i class="fab fa-whatsapp" id="whatsapp" aria-hidden="true" ></i>Contactanos </a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form> -->
+    </div>
+  </nav>
+</div>
+
+          <header>
+            <h4 class="segungdoTitulo"> 
+                    Echa Un Vistazo Es Gratis 
+            </h4>
+          </header>
+<div class="containerCards">
+  <div class="d-flex flex-wrap justify-content-between ">
+    <div class="secondContainer"*ngFor="let wine of wineList">
+      <div class="card  mb-5  " style="width: 18rem;">
+        <img src="../../../assets/img/wine.jpg" class="card-img-top"  alt="..."> 
+        <div class="card-body">
+          <h5 class="card-title">{{wine.vino}}</h5>
+          <p class="card-text">{{wine.characteristics}}</p>
+          <p>{{wine.bodegaProveniente}}</p>
+          <p>{{wine.caracteristicas}}</p>
+          <p>{{wine.nombreVino}}</p>
+          <a href="#" class="btn btn-primary btn-lg btn-block">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mifoot">
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">Ermita Del Conde</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+ 
+</div>

@@ -1,0 +1,34 @@
+
+
+    
+
+<div class="containerPrincipal">
+  <form method="post"[formGroup]="log" (ngSubmit)="saveForm()">
+    <div class="imgcontainer">
+      <img src="../../../assets/img/bodega.png" alt="" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Email</b></label>
+      <input type="text" 
+            placeholder="Suscribete con tu email" 
+            name="uname" required
+            formControlName="email">
+            
+
+  
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" 
+                placeholder="Elige Una Contraseña" 
+                name="psw" required
+                formControlName="contrasena">
+          
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recuerdame La Proxima
+      </label>
+    </div>
+  
+    
+  </form>
+</div>

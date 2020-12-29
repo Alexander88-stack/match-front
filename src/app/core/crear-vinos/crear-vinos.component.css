@@ -1,0 +1,44 @@
+*{
+    margin:0px;
+    padding:0;
+    box-sizing: border-box ;
+    
+}
+.title {
+    margin-top: 60px;
+    text-align: center;
+    font-family: monospace ;
+    
+    
+}
+
+.nav-link {
+    font-family: fantasy;
+    font-size: x-large;
+}
+.btn {
+    
+    font-family: fantasy;
+    border-radius: 7px;
+    background-color: rgb(225, 240, 96);
+    margin-right: 10px;
+    
+}
+
+.form-control {
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.contForm {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 30px;
+    padding-top: 100px;
+    width:35rem;
+}
+.mifoot {
+    padding-top: 150px;
+}
